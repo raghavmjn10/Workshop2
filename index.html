@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghav Maharjan | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Raghav.</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-btn" id="menu-btn">☰</button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Raghav Maharjan</span></h1>
+            <p>Frontend Developer | UI/UX Enthusiast</p>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a frontend developer passionate about building clean,
+            modern, and responsive user interfaces.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+
+        <div class="skills-row">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Git</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Workshop 1 Portfolio</h3>
+                <p>My first portfolio website.</p>
+                <a href="https://raghavmjn10.github.io/Workshop1/" target="_blank">View</a>
+            </div>
+
+            <div class="card">
+                <h3>Restaurant Website</h3>
+                <p>Responsive site with carousel + map.</p>
+                <a href="#">View</a>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript Mini Apps</h3>
+                <p>DOM, events, and UI interactions.</p>
+                <a href="#">View</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <textarea id="message" placeholder="Message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <p id="form-msg"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Raghav Maharjan
+    </footer>
+
+    <!-- JavaScript (must be LAST) -->
+    <script src="script.js"></script>
+</body>
+</html>
