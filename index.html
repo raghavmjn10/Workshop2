@@ -9,86 +9,105 @@
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Raghav Maharjan</h1>
-        <p>Frontend Developer | UI/UX Enthusiast</p>
+<!-- HERO + NAV -->
+<header id="hero">
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <!-- Background Video -->
+    <video autoplay loop muted id="video-background">
+        <source src="background-loop.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a beginner frontend developer interested in creating simple,
-            clean and responsive websites.
-        </p>
-    </section>
+    <nav class="navbar">
+        <div class="logo">Raghav</div>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2>My Skills</h2>
-
-        <ul class="skill-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Git</li>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Projects</h2>
+        <button id="menu-button" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+    </nav>
 
-        <div class="projects-container">
+    <div class="hero-content">
+        <h1>Raghav Maharjan</h1>
+        <p>Frontend Developer & UI/UX Enthusiast</p>
+    </div>
+</header>
 
-            <div class="project-card">
-                <h3>Workshop 1 Portfolio</h3>
-                <p>My first portfolio website.</p>
-                <a href="https://raghavmjn10.github.io/Workshop1/" target="_blank">View Project</a>
-            </div>
 
-            <div class="project-card">
-                <h3>Restaurant Website</h3>
-                <p>Simple and responsive restaurant webpage.</p>
-                <a href="#">View Project</a>
-            </div>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I build simple, clean, and responsive websites using HTML, CSS, JavaScript, and basic UI/UX principles.</p>
+</section>
 
-            <div class="project-card">
-                <h3>JavaScript Mini Apps</h3>
-                <p>Small apps made using DOM and events.</p>
-                <a href="#">View Project</a>
-            </div>
 
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-row">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Git</div>
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div id="projects-grid">
+
+        <div class="project-card">
+            <h3>Workshop 1 Portfolio</h3>
+            <p>My first portfolio website.</p>
+            <a href="https://raghavmjn10.github.io/Workshop1/" target="_blank">View</a>
         </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+        <div class="project-card">
+            <h3>Restaurant Website</h3>
+            <p>Basic responsive website.</p>
+            <a href="#" target="_blank">View</a>
+        </div>
 
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Email Address" required>
-            <textarea id="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="project-card">
+            <h3>JavaScript Mini Apps</h3>
+            <p>Small DOM-based apps.</p>
+            <a href="#" target="_blank">View</a>
+        </div>
 
-        <p id="form-msg"></p>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        © 2025 Raghav Maharjan
-    </footer>
 
-    <script src="script.js"></script>
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <textarea id="message" placeholder="Message"></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <p id="form-msg"></p>
+</section>
+
+
+<footer>
+    © 2025 Raghav Maharjan
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
