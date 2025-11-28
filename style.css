@@ -1,146 +1,140 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #f5f5f5;
-    color: #222;
+    background: #f8f8f8;
+    color: #333;
 }
 
-/* VIDEO BACKGROUND */
-#hero {
-    position: relative;
-    height: 60vh;
-    color: white;
-    text-align: center;
-}
-
-#video-background {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-/* NAVBAR (Flexbox) */
-.navbar {
+/* NAVBAR */
+nav {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    background: rgba(0,0,0,0.4);
+    padding: 20px 8%;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .nav-links {
     list-style: none;
-    display: none;
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    gap: 25px;
 }
 
 .nav-links a {
-    color: white;
     text-decoration: none;
-    padding: 10px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
 }
 
-/* SHOW MOBILE MENU */
-.nav-links.open {
-    display: flex;
+.nav-links a:hover {
+    color: #0077ff;
 }
 
-#menu-button {
-    background: none;
-    border: none;
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, #ffffff, #e8f1ff);
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero h1 span {
+    color: #0077ff;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+    color: #444;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #0077ff;
     color: white;
-    font-size: 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-/* HERO TEXT */
-.hero-content {
-    margin-top: 100px;
+.btn:hover {
+    background: #005fcc;
 }
 
-/* SECTION DEFAULT */
+/* GENERAL SECTION STYLING */
 section {
-    padding: 40px 20px;
+    padding: 60px 10%;
     text-align: center;
 }
 
-/* SKILLS (Flexbox) */
-.skills-row {
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* ABOUT */
+.about p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* SKILLS */
+.skills .skill-box {
     display: flex;
-    justify-content: center;
-    gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.skill {
+.skill-box p {
     background: white;
-    padding: 10px 20px;
-    border: 1px solid #ccc;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-/* PROJECTS (Grid) */
-#projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
+/* PROJECTS */
+.projects .project-card {
     background: white;
     padding: 20px;
-    border: 1px solid #ccc;
+    margin: 15px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-/* CONTACT FORM */
-form input, form textarea {
-    width: 100%;
-    max-width: 350px;
-    margin: 8px auto;
-    display: block;
-    padding: 10px;
-    border: 1px solid #ccc;
+.project-card h3 {
+    margin-bottom: 8px;
 }
 
-form button {
-    padding: 10px 20px;
-    background: #007bff;
-    border: none;
-    color: white;
+/* CONTACT */
+.contact p {
+    font-size: 18px;
 }
 
+/* FOOTER */
 footer {
-    text-align: center;
+    background: #111;
+    color: white;
     padding: 20px;
-    background: white;
-    margin-top: 30px;
-}
-
-/* RESPONSIVE (TABLET & DESKTOP) */
-@media (min-width: 768px) {
-
-    .navbar {
-        flex-direction: row;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    #menu-button {
-        display: none;
-    }
-
-    section {
-        padding: 60px 10%;
-    }
+    text-align: center;
+    margin-top: 40px;
 }

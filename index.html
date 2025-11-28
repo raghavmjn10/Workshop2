@@ -4,110 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghav Maharjan | Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HERO + NAV -->
-<header id="hero">
+    <header>
+        <nav>
+            <h2 class="logo">Raghav.</h2>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- Background Video -->
-    <video autoplay loop muted id="video-background">
-        <source src="background-loop.mp4" type="video/mp4">
-        Your browser does not support video.
-    </video>
+        <section class="hero">
+            <h1>Hello, I’m <span>Raghav</span></h1>
+            <p>A passionate Graphic Designer & Cyber Security student.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </section>
+    </header>
 
-    <nav class="navbar">
-        <div class="logo">Raghav</div>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I’m Raghav Maharjan, a Graphic Designer and Cyber Security student at Herald College.
+            I enjoy creating beautiful designs, building websites, and learning ethical hacking.
+        </p>
+    </section>
 
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <p>HTML & CSS</p>
+            <p>JavaScript</p>
+            <p>Graphic Design</p>
+            <p>PHP & MySQL</p>
+            <p>Ethical Hacking (Basics)</p>
+        </div>
+    </section>
 
-        <button id="menu-button" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
-    </nav>
-
-    <div class="hero-content">
-        <h1>Raghav Maharjan</h1>
-        <p>Frontend Developer & UI/UX Enthusiast</p>
-    </div>
-</header>
-
-
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>I build simple, clean, and responsive websites using HTML, CSS, JavaScript, and basic UI/UX principles.</p>
-</section>
-
-
-<!-- SKILLS -->
-<section id="skills">
-    <h2>Skills</h2>
-
-    <div class="skills-row">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React</div>
-        <div class="skill">Git</div>
-    </div>
-</section>
-
-
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div id="projects-grid">
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
 
         <div class="project-card">
-            <h3>Workshop 1 Portfolio</h3>
-            <p>My first portfolio website.</p>
-            <a href="https://raghavmjn10.github.io/Workshop1/" target="_blank">View</a>
+            <h3>Weather App</h3>
+            <p>A modern weather app using HTML, CSS, JS and OpenWeather API.</p>
         </div>
 
         <div class="project-card">
-            <h3>Restaurant Website</h3>
-            <p>Basic responsive website.</p>
-            <a href="#" target="_blank">View</a>
+            <h3>Portfolio Website</h3>
+            <p>A simple and clean portfolio designed for college projects.</p>
         </div>
 
         <div class="project-card">
-            <h3>JavaScript Mini Apps</h3>
-            <p>Small DOM-based apps.</p>
-            <a href="#" target="_blank">View</a>
+            <h3>Turbo DriftX (Unity)</h3>
+            <p>Car racing simulator inspired by Asphalt games.</p>
         </div>
+    </section>
 
-    </div>
-</section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: raghav@example.com</p>
+    </section>
 
-
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact</h2>
-
-    <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Email Address" required>
-        <textarea id="message" placeholder="Message"></textarea>
-
-        <button type="submit">Send</button>
-    </form>
-
-    <p id="form-msg"></p>
-</section>
-
-
-<footer>
-    © 2025 Raghav Maharjan
-</footer>
-
-<script src="script.js"></script>
+    <footer>
+        <p>© 2025 Raghav Maharjan | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
