@@ -2,7 +2,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #222; background-color: #fff; }
 .section { padding: 3rem 1rem; }
-h2 { font-size: 2rem; margin-bottom: 1rem; color: #ffea00; } /* Yellow thunder flash */
+h2 { font-size: 2rem; margin-bottom: 1rem; color: #ffea00; } /* Yellow thunder color */
 p, li { font-size: 1rem; margin-bottom: 0.5rem; color: #333; }
 
 /* HERO */
@@ -23,7 +23,6 @@ p, li { font-size: 1rem; margin-bottom: 0.5rem; color: #333; }
   width: 100%; height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(0.7);
 }
 .hero-content h1 { font-size: 3rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 6px #000; }
 .hero-content p { font-size: 1.25rem; text-shadow: 1px 1px 4px #000; }
@@ -42,10 +41,9 @@ p, li { font-size: 1rem; margin-bottom: 0.5rem; color: #333; }
 
 /* PROJECTS */
 #projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-.project-card { background: #222; color: #ffea00; border-radius: 8px; padding: 1rem; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.4); transition: transform 0.3s, box-shadow 0.3s; }
-.project-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.6); }
-.project-card img { width: 100%; border-radius: 6px; margin-bottom: 0.5rem; }
-.btn { display: inline-block; margin-top: 0.5rem; padding: 0.6rem 1.2rem; background-color: #ffea00; color: #222; border-radius: 4px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+.project-card { background: #222; color: #ffea00; border-radius: 8px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: transform 0.3s; }
+.project-card:hover { transform: translateY(-5px); }
+.btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background-color: #ffea00; color: #222; border-radius: 4px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
 .btn:hover { background-color: #e6d600; }
 
 /* CONTACT FORM */
