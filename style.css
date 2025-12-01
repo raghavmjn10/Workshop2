@@ -10,7 +10,7 @@ p, li { font-size: 1rem; margin-bottom: 0.5rem; color: #ffea00; }
   position: relative;
   height: 100vh;
   color: #ffea00;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -63,3 +63,4 @@ textarea { resize: vertical; }
   .nav-links li { margin: 0 1rem; }
   .menu-toggle { display: none; }
 }
+=
